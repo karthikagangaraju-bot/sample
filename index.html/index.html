@@ -1,56 +1,133 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RepliCode - Build. Learn. Replicate.</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>RepliCode</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#ffffff;
+    margin:0;
+    text-align:center;
+}
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    padding:15px 40px;
+    background:#ffffff;
+}
+.navbar a{
+    margin-left:15px;
+    text-decoration:none;
+    color:#333;
+}
+h1{
+    font-size:40px;
+    font-weight:800;
+    margin-top:60px;
+}
+.subtitle{
+    color:#555;
+    margin-bottom:30px;
+}
+.btn{
+    padding:12px 20px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    margin:0 10px;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+}
+.github-btn{
+    background:#000;
+    color:#fff;
+}
+.learn-btn{
+    background:#eaeaea;
+}
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:50px;
+    flex-wrap:wrap;
+}
+.card{
+    background:#ffffff;
+    width:260px;
+    padding:25px;
+    border-radius:14px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+.icon{
+    font-size:42px;
+    margin-bottom:15px;
+}
+.bulb{
+    color:#ffae00;
+}
+.computer{
+    color:#9e9e9e;
+    position:relative;
+}
+.computer::after{
+    content:"";
+    position:absolute;
+    width:18px;
+    height:12px;
+    background:#2f80ed;
+    top:12px;
+    left:12px;
+    border-radius:2px;
+}
+.settings{
+    color:#c7b7e2;
+}
+</style>
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="logo">RepliCode</div>
-        <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Features</a>
-            <a href="#">Contact</a>
-        </div>
-    </nav>
+<div class="navbar">
+    <strong>RepliCode</strong>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
 
-    <header class="hero">
-        <h1>Build. Learn. Replicate.</h1>
-        <p class="subtitle">Practice coding by building real projects.</p>
-        <div class="cta-buttons">
-            <a href="https://github.com/your-profile" target="_blank" class="btn github-btn">
-                <i class="fa-brands fa-github"></i> View on GitHub
-            </a>
-            <button class="btn learn-btn">Learn More</button>
-        </div>
-    </header>
+<h1>Build. Learn. Replicate</h1>
+<div class="subtitle">Practice coding by building real projects.</div>
 
-    <section class="cards">
-        <div class="card">
-            <i class="fa-solid fa-lightbulb icon bulb"></i>
-            <h3>Learn by Doing</h3>
-            <p>Improve your coding skills.</p>
-        </div>
-        <div class="card">
-            <i class="fa-solid fa-laptop icon computer"></i>
-            <h3>Project Examples</h3>
-            <p>Study real world projects.</p>
-        </div>
-        <div class="card">
-            <i class="fa-solid fa-gear icon gear"></i>
-            <h3>Easy to Follow</h3>
-            <p>Simple steps to replicate.</p>
-        </div>
-    </section>
+<button class="btn github-btn">
+    <i class="fab fa-github"></i> View on GitHub
+</button>
+<button class="btn learn-btn">Learn More</button>
 
-    <footer>
-        <p>&copy; 2026 RepliCode.</p>
-    </footer>
+<div class="cards">
+    <div class="card">
+        <i class="fas fa-lightbulb icon bulb"></i>
+        <h3>Learn by Doing</h3>
+        <p>Improve your coding skills.</p>
+    </div>
 
-    <script src="script.js"></script>
+    <div class="card">
+        <i class="fas fa-desktop icon computer"></i>
+        <h3>Project Examples</h3>
+        <p>Study real world projects.</p>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-cog icon settings"></i>
+        <h3>Easy to Follow</h3>
+        <p>Simple steps to replicate.</p>
+    </div>
+</div>
+
 </body>
 </html>
+```
