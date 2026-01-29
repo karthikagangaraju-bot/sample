@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (githubBtn) {
         githubBtn.addEventListener('click', () => {
             console.log("Redirecting to GitHub...");
-            window.open('https://github.com/YOUR_GITHUB_USERNAME', '_blank');
+            window.open('https://github.com/karthikagangaraju-bot', '_blank');
         });
     }
 
