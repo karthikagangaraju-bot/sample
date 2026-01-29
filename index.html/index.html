@@ -1,55 +1,56 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Computer UI</title>
-  <style>
-    body{
-      margin:0;
-      height:100vh;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      background:#ffffff;
-      font-family:Arial, sans-serif;
-    }
-    .computer{
-      width:320px;
-      border:6px solid #9e9e9e;
-      border-radius:12px;
-      padding:14px;
-      background:#f3eaff; /* light lavender */
-    }
-    .screen{
-      height:180px;
-      background:#4da3ff;
-      border-radius:8px;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-    }
-    button{
-      padding:12px 18px;
-      border:none;
-      border-radius:6px;
-      background:#ffffff;
-      font-weight:bold;
-      cursor:pointer;
-    }
-    button:hover{
-      background:#eaeaea;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RepliCode - Build. Learn. Replicate.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="computer">
-    <div class="screen">
-      <button onclick="window.open('https://github.com/karthikagangaraju-bot','_blank')">
-        Open GitHub
-      </button>
-    </div>
-  </div>
+
+    <nav class="navbar">
+        <div class="logo">RepliCode</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Build. Learn. Replicate.</h1>
+        <p class="subtitle">Practice coding by building real projects.</p>
+        <div class="cta-buttons">
+            <a href="https://github.com/your-profile" target="_blank" class="btn github-btn">
+                <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
+            <button class="btn learn-btn">Learn More</button>
+        </div>
+    </header>
+
+    <section class="cards">
+        <div class="card">
+            <i class="fa-solid fa-lightbulb icon bulb"></i>
+            <h3>Learn by Doing</h3>
+            <p>Improve your coding skills.</p>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-laptop icon computer"></i>
+            <h3>Project Examples</h3>
+            <p>Study real world projects.</p>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-gear icon gear"></i>
+            <h3>Easy to Follow</h3>
+            <p>Simple steps to replicate.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 RepliCode.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-```

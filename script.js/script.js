@@ -1,45 +1,23 @@
-// Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', () => {
-
-    // 1. Handle Button Clicks
-    const githubBtn = document.querySelector('.github-btn');
-    const learnBtn = document.querySelector('.learn-btn');
-
-    if (githubBtn) {
-        githubBtn.addEventListener('click', () => {
-            console.log("Redirecting to GitHub...");
-            // window.location.href = 'https://github.com'; 
-        });
-    }
-
-    if (learnBtn) {
-        learnBtn.addEventListener('click', () => {
-            alert("More information coming soon!");
-        });
-    }
-
-    // 2. Simple Scroll Reveal Animation for Cards
     const cards = document.querySelectorAll('.card');
     
-    const observerOptions = {
-        threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, observerOptions);
-
-    cards.forEach(card => {
-        // Initial state for animation
+    // Add a simple fade-in effect
+    cards.forEach((card, index) => {
         card.style.opacity = '0';
         card.style.transform = 'translateY(20px)';
-        card.style.transition = 'all 0.6s ease-out';
         
-        observer.observe(card);
+        setTimeout(() => {
+            card.style.transition = 'all 0.6s ease';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+        }, 200 * index);
+    });
+
+    // Handle "Learn More" scroll
+    document.querySelector('.learn-btn').addEventListener('click', () => {
+        window.scrollTo({
+            top: document.querySelector('.cards').offsetTop - 50,
+            behavior: 'smooth'
+        });
     });
 });
