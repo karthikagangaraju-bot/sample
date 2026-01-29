@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RepliCode - Build. Learn. Replicate.</title>
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <style>
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
@@ -33,7 +36,7 @@
         /* Hero Section */
         h1 {
             font-size: 48px;
-            font-weight: 800; /* Bold as requested */
+            font-weight: 800;
             margin-top: 60px;
             margin-bottom: 10px;
         }
@@ -94,7 +97,6 @@
             width: 260px;
             padding: 30px;
             border-radius: 20px;
-            /* Realistic deep shadow */
             box-shadow: 0 10px 30px rgba(0,0,0,0.08);
             transition: 0.3s;
         }
@@ -107,13 +109,10 @@
             font-size: 50px;
             margin-bottom: 20px;
             display: inline-block;
-            /* Adds realistic shadow to the icon shape itself */
             filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));
         }
 
-        /* Specific Icon Colors */
         .bulb {
-            /* Mixed Yellow and Orange Gradient */
             background: linear-gradient(135deg, #ffcc00, #ff8800);
             -webkit-background-clip: text;
             background-clip: text;
@@ -121,11 +120,11 @@
         }
 
         .computer {
-            color: #2f80ed; /* Plane Blue */
+            color: #2f80ed;
         }
 
         .settings {
-            color: #b388ff; /* Lavender / Light Purple */
+            color: #b388ff;
         }
 
         p {
@@ -136,6 +135,7 @@
 </head>
 <body>
 
+    <!-- Navbar -->
     <div class="navbar">
         <strong style="font-size: 1.2rem;">RepliCode</strong>
         <div>
@@ -145,18 +145,24 @@
         </div>
     </div>
 
+    <!-- Hero -->
     <header>
         <h1>Build. Learn. Replicate.</h1>
         <p class="subtitle">Practice coding by building real projects.</p>
 
         <div class="cta-buttons">
-            <a href="https://github.com/karthikagangaraju-bot" target="_blank" class="btn github-btn">
+            <!-- YOUR GITHUB PROFILE LINK -->
+            <a href="https://github.com/karthikagangaraju-bot"
+               target="_blank"
+               class="btn github-btn">
                 <i class="fab fa-github"></i> View on GitHub
             </a>
+
             <a href="#" class="btn learn-btn">Learn More</a>
         </div>
     </header>
 
+    <!-- Features -->
     <section class="cards">
         <div class="card">
             <i class="fas fa-lightbulb icon bulb"></i>
@@ -178,10 +184,10 @@
     </section>
 
     <script>
-        // Smooth scroll for Learn More button
         document.querySelector('.learn-btn').addEventListener('click', (e) => {
             e.preventDefault();
-            document.querySelector('.cards').scrollIntoView({ behavior: 'smooth' });
+            document.querySelector('.cards')
+              .scrollIntoView({ behavior: 'smooth' });
         });
     </script>
 
