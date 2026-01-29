@@ -1,57 +1,55 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>RepliCode</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <title>Computer UI</title>
+  <style>
+    body{
+      margin:0;
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:#ffffff;
+      font-family:Arial, sans-serif;
+    }
+    .computer{
+      width:320px;
+      border:6px solid #9e9e9e;
+      border-radius:12px;
+      padding:14px;
+      background:#f3eaff; /* light lavender */
+    }
+    .screen{
+      height:180px;
+      background:#4da3ff;
+      border-radius:8px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+    button{
+      padding:12px 18px;
+      border:none;
+      border-radius:6px;
+      background:#ffffff;
+      font-weight:bold;
+      cursor:pointer;
+    }
+    button:hover{
+      background:#eaeaea;
+    }
+  </style>
 </head>
 <body>
-
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="logo">RepliCode</div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Features</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
-
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <h1>Build. Learn. Replicate</h1>
-    <p>Practice coding by building real projects.</p>
-
-    <div class="buttons">
-      <button class="btn github-btn">
-        <span>🐙</span> View on GitHub
+  <div class="computer">
+    <div class="screen">
+      <button onclick="window.open('https://github.com/karthikagangaraju-bot','_blank')">
+        Open GitHub
       </button>
-      <button class="btn learn-btn">Learn More</button>
     </div>
-  </section>
-
-  <!-- FEATURES -->
-  <section class="features">
-    <div class="card">
-      <div class="icon">💡</div>
-      <h3>Learn by Doing</h3>
-      <p>Improve your coding skills.</p>
-    </div>
-
-    <div class="card">
-      <div class="icon">💻</div>
-      <h3>Project Examples</h3>
-      <p>Study real world projects.</p>
-    </div>
-
-    <div class="card">
-      <div class="icon">⚙️</div>
-      <h3>Easy to Follow</h3>
-      <p>Simple steps to replicate.</p>
-    </div>
-  </section>
-
-  <script src="script.js"></script>
+  </div>
 </body>
 </html>
+```
